@@ -29,7 +29,7 @@ class SpamBot:
         # get profile info
         uid = token.get("c_user")
         user = self.client.fetchUserInfo(uid)[uid]
-        print(f"Succesfully logged in Profile Name: {user.name}")
+        print("Succesfully logged in Profile Name:" + user.name)
 
         # options start
         self.StartOptions()
